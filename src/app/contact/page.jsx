@@ -92,37 +92,43 @@ const ContactPage = () => {
           ref={form}
           className="lg:flex-grow lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-4 justify-center p-8 sm:p-12 lg:p-24"
         >
-          <span>My name is:</span>
-          <input
-            name="user_name"
-            type="text"
-            placeholder="Enter Your Name"
-            className="bg-transparent p-3 border-2 rounded-lg border-slate-400 outline-none"
-          />
-          {formError.user_name && (
-            <span className="text-red-600">{formError.user_name}</span>
-          )}
-          <span>My email address is:</span>
-          <input
-            name="user_email"
-            type="email"
-            placeholder="Enter Your Email"
-            className="bg-transparent p-3 border-2 rounded-lg border-slate-400 outline-none"
-          />
-          {formError.user_email && (
-            <span className="text-red-600">{formError.user_email}</span>
-          )}
-          <span>Dear Nahid,</span>
-          <textarea
-            rows={6}
-            placeholder="Write Your Message here..."
-            className="h-full p-3 bg-transparent border-2 rounded-lg border-slate-400 outline-none resize-none"
-            name="user_message"
-          />
-          {formError.user_message && (
-            <span className="text-red-600">{formError.user_message}</span>
-          )}
-          <span>Regards</span>
+          <label className="block">
+            <span>My name is:</span>
+            <input
+              name="user_name"
+              type="text"
+              placeholder="Enter Your Name"
+              className="bg-transparent p-3 border-2 rounded-lg border-slate-400 outline-none w-full"
+            />
+            {formError.user_name && (
+              <span className="text-red-600">{formError.user_name}</span>
+            )}
+          </label>
+          <label className="block">
+            <span>My email address is:</span>
+            <input
+              name="user_email"
+              type="email"
+              placeholder="Enter Your Email"
+              className="bg-transparent p-3 border-2 rounded-lg border-slate-400 outline-none w-full"
+            />
+            {formError.user_email && (
+              <span className="text-red-600">{formError.user_email}</span>
+            )}
+          </label>
+          <label className="block">
+            <span>Dear Nahid,</span>
+            <textarea
+              rows={6}
+              placeholder="Write Your Message here..."
+              className="h-full p-3 bg-transparent border-2 rounded-lg border-slate-400 outline-none resize-none w-full"
+              name="user_message"
+            />
+            {formError.user_message && (
+              <span className="text-red-600">{formError.user_message}</span>
+            )}
+          </label>
+          <span className="mt-5">Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
             Send
           </button>
