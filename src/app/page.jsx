@@ -14,13 +14,13 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="h-3/5 md:h-1/2 lg:h-full lg:w-1/2 relative">
+        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image src="/myself.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-2 md:gap-8 items-center justify-center">
           {/* TITLE */}
-          <h1 className="text-4xl mt-6 md:text-6xl font-bold">
+          <h1 className="text-4xl md:mt-6 md:text-6xl font-bold">
             Web Developer
           </h1>
           {/* DESC */}
