@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaLevelDownAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const ContactPage = () => {
@@ -95,10 +95,14 @@ const ContactPage = () => {
           ref={form}
           className="lg:flex-grow lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-4 justify-center p-8 sm:p-12 lg:p-24"
         >
-         <div className="flex items-center gap-2"> <FaPhoneAlt /> 01784051122</div>
-         <div className="flex items-center gap-2">
-         <MdEmail /> nhwnahid@gmail.com
-         </div>
+        <div>
+           <div className="flex items-center gap-2"> <FaPhoneAlt /> 01784051122</div>
+           <div className="flex items-center gap-2">
+           <MdEmail /> nhwnahid@gmail.com
+           </div>
+        </div>
+         
+         <div className="flex font-bold items-center">Or send me message here <FaLevelDownAlt /> </div>
           <label className="block z-50">
             <span>My name is:</span>
             <input
@@ -128,7 +132,7 @@ const ContactPage = () => {
             <textarea
               rows={6}
               placeholder="Write Your Message here..."
-              className="h-full p-3 bg-transparent border-2 rounded-lg border-slate-400 outline-none resize-none w-full"
+              className="h-full p-3 bg-transparent border-2 rounded-lg border-slate-400 outline-none w-full"
               name="user_message"
             />
             {formError.user_message && (
