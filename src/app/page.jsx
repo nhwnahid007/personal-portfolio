@@ -18,14 +18,14 @@ const Homepage = () => {
           <Image src="/myself.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-2 md:gap-8 items-center justify-center">
           {/* TITLE */}
           <h1 className="text-4xl mt-6 md:text-6xl font-bold">
             Web Developer
           </h1>
           {/* DESC */}
           <p className="text-sm md:text-xl">
-          I am a passionate web developer specializing in React,Express,Firebase,Node,MongoDb. With a strong foundation in development, I enjoy building dynamic and responsive web applications.I am committed to continuous learning and staying updated with the latest industry trends to deliver cutting-edge projects. Let&apos;s work together to bring your ideas to life!
+          I am a passionate web developer specializing in React, Express, Firebase, Node, MongoDb. With a strong foundation in web development, I enjoy building dynamic and responsive web applications.I am committed to continuous learning and staying updated with the latest industry trends. Let&apos;s work together to bring your ideas to life!
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
