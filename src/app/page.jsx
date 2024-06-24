@@ -25,7 +25,7 @@ const Homepage = () => {
           </h1>
           {/* DESC */}
           <p className="text-sm md:text-xl">
-          I am a passionate web developer specializing in React, Express, Firebase, Node, MongoDb. With a strong foundation in web development, I enjoy building dynamic and responsive web applications.I am committed to continuous learning and staying updated with the latest industry trends. Let&apos;s work together to bring your ideas to life!
+          I am a passionate web developer specializing in React, Express, Firebase, Node, MongoDb. With a strong foundation in web development, I am committed to continuous learning and staying updated with the latest industry trends. Let&apos;s work together to bring your ideas to life!
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
