@@ -103,7 +103,19 @@ const ContactPage = () => {
         </div>
          <hr />
          <div className="flex font-bold items-center">Or send me message here <FaLevelDownAlt /> </div>
-          <label className="block z-50">
+         <label className="block z-50">
+            <span>Dear Nahid,</span>
+            <textarea
+              rows={4}
+              placeholder="Write Your Message here..."
+              className="h-full p-3 bg-transparent border-2 rounded-lg border-slate-400 outline-none w-full"
+              name="user_message"
+            />
+            {formError.user_message && (
+              <span className="text-red-600">{formError.user_message}</span>
+            )}
+          </label>
+          <label className=" mt-4 block z-50">
             <span>My name is:</span>
             <input
               name="user_name"
@@ -127,19 +139,8 @@ const ContactPage = () => {
               <span className="text-red-600">{formError.user_email}</span>
             )}
           </label>
-          <label className="block z-50">
-            <span>Dear Nahid,</span>
-            <textarea
-              rows={6}
-              placeholder="Write Your Message here..."
-              className="h-full p-3 bg-transparent border-2 rounded-lg border-slate-400 outline-none w-full"
-              name="user_message"
-            />
-            {formError.user_message && (
-              <span className="text-red-600">{formError.user_message}</span>
-            )}
-          </label>
-          <span className="mt-10">Regards</span>
+          
+          <span className="mt-4">Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
             Send
           </button>
