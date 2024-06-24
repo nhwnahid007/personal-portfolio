@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
@@ -66,6 +68,7 @@ const ContactPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+        
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
           <div>
@@ -92,7 +95,11 @@ const ContactPage = () => {
           ref={form}
           className="lg:flex-grow lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-4 justify-center p-8 sm:p-12 lg:p-24"
         >
-          <label className="block">
+         <div className="flex items-center gap-2"> <FaPhoneAlt /> 01784051122</div>
+         <div className="flex items-center gap-2">
+         <MdEmail /> nhwnahid@gmail.com
+         </div>
+          <label className="block z-50">
             <span>My name is:</span>
             <input
               name="user_name"
@@ -104,7 +111,7 @@ const ContactPage = () => {
               <span className="text-red-600">{formError.user_name}</span>
             )}
           </label>
-          <label className="block">
+          <label className="block z-50">
             <span>My email address is:</span>
             <input
               name="user_email"
@@ -116,7 +123,7 @@ const ContactPage = () => {
               <span className="text-red-600">{formError.user_email}</span>
             )}
           </label>
-          <label className="block">
+          <label className="block z-50">
             <span>Dear Nahid,</span>
             <textarea
               rows={6}
