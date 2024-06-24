@@ -101,7 +101,7 @@ const ContactPage = () => {
            <MdEmail /> nhwnahid@gmail.com
            </div>
         </div>
-         
+         <hr />
          <div className="flex font-bold items-center">Or send me message here <FaLevelDownAlt /> </div>
           <label className="block z-50">
             <span>My name is:</span>
