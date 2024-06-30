@@ -74,19 +74,29 @@ const PortfolioPage = () => {
                     {item.title}
                   </h1>
                   <div className="relative w-64 h-40 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] mx-auto">
-                    <Image src={item.img} alt={item.title} fill className="object-cover" />
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                   <p className="w-64 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px] mx-auto">
                     {item.desc}
                   </p>
                   <div className="flex justify-center gap-4 mt-4">
-                    <Link href={item.liveLink}>
-                      <button className="p-2 text-sm md:text-md lg:text-lg bg-white text-gray-600 font-semibold rounded"><FaExternalLinkAlt /></button>
-                    </Link>
-                    <Link href={item.gitLink}>
-                      <button className="p-2 text-sm md:text-md lg:text-lg bg-white text-gray-600 font-semibold rounded"><FaGithub /></button>
-                    </Link>
-                  </div>
+  <Link href={item.liveLink}>
+    <button className="p-2 text-2xl bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold rounded shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+      <FaExternalLinkAlt />
+    </button>
+  </Link>
+  <Link href={item.gitLink}>
+    <button className="p-2 text-2xl bg-gradient-to-r from-gray-700 to-gray-900 text-white font-semibold rounded shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+      <FaGithub />
+    </button>
+  </Link>
+</div>
+
                 </div>
               </div>
             ))}
